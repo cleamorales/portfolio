@@ -11,7 +11,7 @@ This is my personal portfolio website as a computer science student, it's basica
 
 ## Tech Stack
 
-- **Frontend:** HTML, CSS, JavaScript  
+- **Frontend:** React, HTML, CSS, JavaScript  
 - **Deployment:** GitHub Pages 
 
 ## How to Run Locally
