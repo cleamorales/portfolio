@@ -16,15 +16,25 @@ This is my personal portfolio website as a computer science student, it's basica
 
 ## How to Run Locally
 
-1. Clone the repository:
+### 1. Clone the repository
+
+``` bash
+git clone https://github.com/YOUR_USERNAME/portfolio.git
+cd portfolio
+```
+
+### 2. Install dependencies
+
+``` bash   
+npm install
+```
+
+### 3. Start the development server
 
 ```bash
-git clone https://github.com/cleamorales/portfolio-website.git
-
-Open index.html in a browser:
-
-open index.html   # Mac/Linux
-start index.html  # Windows
-
+npm run dev
 ```
-or click on this link to open: 
+
+### 4. Open in your browser
+
+Navigate to http://localhost:5173 to view the site.
