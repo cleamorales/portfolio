@@ -1,0 +1,133 @@
+.projects {
+  padding: 60px 10% 120px;  
+  background-color: #f6f1ec;
+  text-align: center;
+}
+
+.projects-title {
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  color: #3e2f23;
+  margin-bottom: 60px;
+  text-align: left;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+/* CARD STYLE */
+.project-card {
+  background: transparent;
+  border-style: double;
+  border-color: #3e2f23;
+  border-radius: 3px;
+  padding: 30px;
+  text-align: left;
+  box-shadow: 0 8px 15px rgba(62, 47, 35, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 28px rgba(62, 47, 35, 0.18);
+}
+
+.project-card h3 {
+  color: #3e2f23;
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  color: #5c4a3d;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.project-card .tech-stack {
+  color: #a47551;
+  font-weight: 600;
+}
+
+/* LINKS */
+
+
+.project-links a {
+  display: inline-block;
+  padding: 6px 14px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+  background-color: rgba(164, 117, 81, 0.2);
+  color: #3e2f23;
+}
+
+.project-links a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(79, 48, 31, 0.15);
+  background-color: rgba(164, 117, 81, 0.4);
+  transform: translateY(-2px);
+}
+
+/* IMAGE AREA */
+.project-image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 3px;
+  margin-bottom: 18px;
+  background-color: #f6f1ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .projects {
+    padding: 30px 5%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  .projects-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .projects-container {
+    gap: 25px;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .project-image {
+    height: 160px;
+  }
+
+  .project-links {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+}

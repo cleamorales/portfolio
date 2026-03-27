@@ -1,0 +1,119 @@
+.about {
+  min-height: 100vh;
+  background: #f6f1ec;
+  color: #3e2f23;
+  display: flex;
+  justify-content: left;
+  gap: 50px;
+  align-items: flex-start;
+  flex-wrap: wrap; /* allow wrapping on smaller screens */
+  padding: 60px 10% 60px;
+  margin-top: 50px;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  flex: 1;
+}
+
+.about-title {
+  font-size: clamp(2rem, 5vw, 2.625rem);
+  margin-bottom: 25px;
+  color: #3e2f23;
+}
+
+.about-text {
+  font-size: clamp(1.2rem, 2.5vw, 1.125rem);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.skills {
+  font-size: clamp(1.2rem, 2.5vw, 1.125rem);
+  display: flex;
+  gap: 40px; /* space between columns */
+  margin-bottom: 20px;
+  justify-content: space-between
+}
+
+.skills-left {
+  list-style-type: square;
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-center {
+  list-style-type: square;
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-right {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+
+.about-img img {
+  width: 360px;
+  height: auto;
+  border-radius: 3px;
+  margin-top: 85px;
+}
+
+/* Responsive */
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    padding: 30px 5%;
+    margin-top: 20px;
+  }
+
+  .about-container {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .about-img {
+    width: 100%;              
+    display: flex;
+    justify-content: center;  
+    margin-top: 0;            
+  }
+
+  .about-img img {
+    width: 75%;
+    max-width: 260px;
+    margin-top: 0px;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  /* Keep skills in three columns */
+  .skills {
+    flex-direction: row;      /* keep row layout */
+    gap: 15px;                /* adjust gap for smaller screens */
+    justify-content: space-between; /* distribute columns */
+    flex-wrap: wrap;          /* allow wrap if screen is very small */
+  }
+
+  .skills-left,
+  .skills-center,
+  .skills-right {
+    width: 30%;               /* make 3 columns fit in row */
+    text-align: left;         /* align text nicely */
+  }
+
+  .about-title{
+    margin-bottom: 15px;
+  }
+}

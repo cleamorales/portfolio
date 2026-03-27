@@ -1,0 +1,26 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* page background */
+body {
+  background-color: #f6f1ec;
+  font-family: 'Lato', sans-serif;
+  color: #4E4A46;
+  margin: 0;
+}
+
+/* headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  color: #2C2A28;
+}
+
+
+/* smoother scrolling for navbar links */
+html {
+  scroll-behavior: smooth;
+}

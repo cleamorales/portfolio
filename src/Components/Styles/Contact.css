@@ -1,0 +1,66 @@
+.contact {
+  min-height: 70vh;
+  background: #f6f1ec;
+  color: #3e2f23;
+  padding: 120px 10%;
+  display: flex;
+  flex-direction: column; /* stack title and icons vertically */
+  align-items: center;    /* center horizontally */
+  justify-content: center; /* optional: center vertically */
+  text-align: center;      /* center text inside */
+  gap: 40px;      
+  background-size: cover;
+  background-position: center;        
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 600px; /* optional: limit content width */
+  margin: 0 auto;
+}
+
+.contact-title {
+  font-size: clamp(4rem, 5vw, 2.625rem);
+  margin-bottom: 0; /* remove extra space; gap handles spacing */
+}
+
+.contact-text {
+  font-size: clamp(2.5rem, 2.5vw, 1.5rem);
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+/* Contact icons */
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  font-size: 2.1rem;
+}
+
+.icons a {
+  color: #3e2f23;
+  transition: 0.2s;
+}
+
+.icons a:hover {
+  color: #a47551;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .contact {
+    padding: 60px 5%;
+    gap: 20px;
+  }
+
+ .contact-title {
+    font-size: 2.8rem; 
+  }
+
+  .icons {
+    gap: 12px;
+    font-size: 1.3rem;
+  }
+}
