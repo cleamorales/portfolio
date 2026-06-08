@@ -23,8 +23,8 @@ function Projects() {
           
 
             <div className="project-links">
-              {project.links.github && <a href={project.links.github}>GitHub</a>}
-              {project.links.demo && <a href={project.links.demo}>Open Project</a>}
+            <a href={project.links.demo}>Open Project</a>
+            <a href={project.links.github}>GitHub</a>
             </div>
 
           </div>
