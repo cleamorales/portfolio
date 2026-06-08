@@ -29,7 +29,8 @@ const ProjectsData = [
       "A personal productivity tool that allows users to log daily study hours, sleep, workouts, focus, and mood. It organizes data over time, tracks progress, highlights trends, and helps users identify patterns in their habits to improve productivity and wellness.",
     stack: "React, Node.js, Express, MySQL",
     image: studytrackerImg,
-    links: { github: "#" },
+    links: { github: "https://github.com/cleamorales/study-tracker"},
+    links: { demo: "https://studybehaviortracker.vercel.app/"},
   },
   
 ];
