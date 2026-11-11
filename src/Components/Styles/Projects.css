@@ -1,5 +1,7 @@
 .projects {
-  padding: 60px 10% 120px;  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 5% 120px;
   background-color: #f6f1ec;
   text-align: center;
 }

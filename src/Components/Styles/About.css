@@ -1,20 +1,19 @@
 .about {
-  min-height: 100vh;
   background: #f6f1ec;
   color: #3e2f23;
   display: flex;
-  justify-content: left;
-  gap: 50px;
+  justify-content: center;
+  gap: 60px;
   align-items: flex-start;
-  flex-wrap: wrap; /* allow wrapping on smaller screens */
-  padding: 60px 10% 60px;
-  margin-top: 50px;
+  max-width: 1200px;   /* stop the section from stretching on wide screens */
+  margin: 40px auto 0; /* center it */
+  padding: 60px 5%;
 }
 
 .about-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  flex: 1;
+  flex: 1 1 auto;
+  max-width: 700px;
+  min-width: 0;
 }
 
 .about-title {
@@ -24,13 +23,13 @@
 }
 
 .about-text {
-  font-size: clamp(1.2rem, 2.5vw, 1.125rem);
+  font-size: clamp(1rem, 0.9rem + 0.4vw, 1.15rem); /* clamp(MIN, preferred, MAX) */
   line-height: 1.7;
   margin-bottom: 20px;
 }
 
 .skills {
-  font-size: clamp(1.2rem, 2.5vw, 1.125rem);
+  font-size: clamp(1rem, 0.9rem + 0.4vw, 1.15rem);
   display: flex;
   gap: 40px; /* space between columns */
   margin-bottom: 20px;
@@ -54,14 +53,21 @@
 .skills-right {
   list-style-type: square;
   list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+
+.about-img {
+  flex: 0 0 auto; /* photo keeps its size, sits right next to the text */
 }
 
 
 .about-img img {
-  width: 360px;
+  display: block;
+  width: clamp(220px, 26vw, 340px);
   height: auto;
   border-radius: 3px;
-  margin-top: 85px;
+  margin-top: 70px;
 }
 
 /* Responsive */

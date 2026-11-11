@@ -53,10 +53,21 @@
   background-color: rgba(164, 117, 81, 0.4);
 }
 
+/* Medium screens: tighten link spacing so links don't hit the resume button */
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    gap: 40px;
+  }
+}
+
 /* Responsive */
 @media screen and (max-width: 768px) {
   .navbar {
-    padding: 0 10px;
+    padding: 6px 10px;
+    height: auto;
+    min-height: 50px;
+    flex-wrap: wrap;
+    gap: 6px;
   }
 
   .nav-links {

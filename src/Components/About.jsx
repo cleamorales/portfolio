@@ -15,7 +15,7 @@ const About = () => {
 
 
         <p className="about-text">
-          Hi, I am Computer Science student passionate about software engineering, web development, and building full-stack applications. 
+          Hi, I am a Computer Science student passionate about software engineering, web development, and building full-stack applications. 
           I enjoy working on projects that require both analytical thinking and creativity, 
           from designing algorithms and data structures to developing interactive and responsive web experiences.
           Currently, I’m exploring machine learning and advanced web technologies to broaden my skill set and deepen my understanding of the field. 
@@ -26,20 +26,20 @@ const About = () => {
           Here are some of my technical skills:
         </p>
 
-      <div class="skills">
-        <ul class="skills-left">
+      <div className="skills">
+        <ul className="skills-left">
           <li>C++</li>
           <li>Java</li>
           <li>Python</li>
         </ul>
 
-        <ul class="skills-center">
+        <ul className="skills-center">
           <li>React.js</li>
           <li>Node.js</li>
           <li>Express.js</li>
         </ul>
 
-        <ul class="skills-right">
+        <ul className="skills-right">
           <li>Git</li>
           <li>MSQL</li>
           <li>MongoDB</li>
@@ -53,7 +53,7 @@ const About = () => {
         </div>
    
       <div className="about-img">
-        <img src={about}/>
+        <img src={about} alt="Cléa Morales" />
       </div>
 
 
